@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-duration-500 {
+    animation-duration: 500ms;
+  }
+  .animation-duration-1000 {
+    animation-duration: 1000ms;
+  }
+  .animation-duration-2000 {
+    animation-duration: 2000ms;
+  }
+
+  @keyframes wave {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(15deg); }
+  }
+
+  @keyframes clap-left {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+  }
+
+  @keyframes clap-right {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }
+  }
+
+  .animate-wave {
+    animation: wave 1s ease-in-out infinite;
+    transform-origin: bottom center;
+  }
+
+  .animate-clap-left {
+    animation: clap-left 0.5s ease-in-out infinite;
+  }
+
+  .animate-clap-right {
+    animation: clap-right 0.5s ease-in-out infinite;
+  }
+}
