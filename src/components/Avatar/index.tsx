@@ -28,9 +28,7 @@ const Avatar: React.FC<AvatarProps> = ({
     >
       <div className={`avatar-container relative ${className}`}>
         <div className="avatar-wrapper relative w-64 h-80 mx-auto">
-          <Body />
-          <Face />
-          <Hands />
+          {/* Avatar rendering here */}
         </div>
         {showControls && <AvatarControls />}
       </div>

@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Auth from './pages/Auth';
 import Dashboard from './pages/Dashboard';
 import AvatarControl from './pages/AvatarControl';
+import Aide from './pages/Aide';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/avatar-control" element={<AvatarControl />} />
         <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="/Aide"  element={<Aide />} />
+
       </Routes>
     </BrowserRouter>
   );

@@ -9,15 +9,16 @@ const Auth = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-emerald-100 py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 to-emerald-100 py-12 px-4 pt-80">
       <div className="max-w-md mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
-        <div className="flex mb-4">
+        <div className="flex mb-4  mt-50">
           <button
             className={`flex-1 py-4 text-lg font-medium transition-colors ${
               activeTab === 'login'
                 ? 'bg-emerald-500 text-white'
                 : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
+          
             onClick={() => setActiveTab('login')}
           >
             Se connecter
@@ -35,13 +36,19 @@ const Auth = () => {
         </div>
 
         <div className="p-8">
-          <div className="w-40 h-40 mx-auto mb-8">
+          <div className="w-40 h-40 mx-auto ">
             <Avatar
               initialEmotion="happy"
               initialGesture="wave"
               animationSpeed="normal"
             />
           </div>
+          <img
+          src="/pdf/avatar.png" //
+          alt="Avatar"
+          className='mt-0'
+         
+        />
 
           <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
             <div className="relative">

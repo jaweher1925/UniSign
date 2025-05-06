@@ -2,11 +2,30 @@ import React, { useRef, useCallback, useEffect } from 'react';
 import Webcam from 'react-webcam';
 import { useAvatar } from './Avatar/AvatarContext';
 import { Camera, CameraOff } from 'lucide-react';
+import { AvatarProvider } from './Avatar/AvatarContext';
 
-const GestureDetection: React.FC = () => {
+interface GestureDetectionProps {
+  onlyCamera?: boolean;
+}
+
+const GestureDetection: React.FC<GestureDetectionProps> = ({ onlyCamera = false }) => {
   const webcamRef = useRef<Webcam | null>(null);
   const { setGesture } = useAvatar();
   const [isActive, setIsActive] = React.useState(false);
+
+  // Si onlyCamera, on affiche juste la webcam
+  if (onlyCamera) {
+    return (
+      <div className="w-full max-w-md mx-auto">
+      <Webcam
+        ref={webcamRef}
+        audio={false}
+        screenshotFormat="image/jpeg"
+        className="rounded-lg shadow-md w-full"
+      />
+    </div>
+    );
+  }
 
   const captureFrame = useCallback(async () => {
     if (!webcamRef.current || !isActive) return;
