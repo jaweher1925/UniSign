@@ -3,11 +3,7 @@ import React, { useState } from 'react';
 const resources = [
   {
     theme: "L'alphabet",
-    videos: [
-      { title: "Alphabet en LSF", url: "https://hbaai.vercel.app/" }
-    ],
-
-  resources: [
+     resources: [
   { title: "Alphabet en LSF", url: "https://hbaai.vercel.app/" }
 ],
 
