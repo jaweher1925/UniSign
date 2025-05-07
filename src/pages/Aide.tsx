@@ -7,16 +7,16 @@ const resources = [
       { title: "Page d'accueil UniSign", url: "https://hbaai.vercel.app/" }
     ],
     pdf: [
-      { name: "Fiche Alphabet LSF", link: "https://hbaai.vercel.app/fiche-alphabet.pdf" }
+      { name: "Fiche Alphabet LSF", link: "https://hbaai.vercel.app/" }
     ]
   },
   {
     theme: "La famille",
     videos: [
-      { title: "Vocabulaire Famille", url: "https://hbaai.vercel.app/vocabulaire-famille.mp4" }
+      { title: "Vocabulaire Famille", url: "https://hbaai.vercel.app/" }
     ],
     pdf: [
-      { name: "Famille en langue des signes", link: "https://hbaai.vercel.app/famille-lsf.pdf" }
+      { name: "Famille en langue des signes", link: "https://hbaai.vercel.app/" }
     ]
   },
   {
