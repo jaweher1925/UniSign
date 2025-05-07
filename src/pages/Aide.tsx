@@ -6,6 +6,12 @@ const resources = [
     videos: [
       { title: "Alphabet en LSF", url: "https://hbaai.vercel.app/" }
     ],
+
+  resources: [
+  { title: "Alphabet en LSF", url: "https://hbaai.vercel.app/" }
+],
+
+
     pdf: [
       { name: "Fiche Alphabet LSF", link: "https://hbaai.vercel.app/" }
     ]
