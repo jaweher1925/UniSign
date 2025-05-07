@@ -13,10 +13,10 @@ const resources = [
   {
     theme: "La famille",
     videos: [
-      { title: "Vocabulaire Famille", url: "https://www.youtube.com/embed/7mA4b1XcMI4" }
+      { title: "Vocabulaire Famille", url: "https://hbaai.vercel.app/" }
     ],
     pdf: [
-      { name: "Famille en langue des signes", link: "/pdf/template_pitch.pdf" }
+      { name: "Famille en langue des signes", link: "https://hbaai.vercel.app/" }
     ]
   },
   {
