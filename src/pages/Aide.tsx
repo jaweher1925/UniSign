@@ -7,7 +7,7 @@ const resources = [
       { title: "Alphabet en LSF", url: "https://www.youtube.com/embed/watch?v=pQO0oCFLeiA" }
     ],
     pdf: [
-      { name: "Fiche Alphabet LSF", link: "/pdfs/template_pitch.pdf" }
+      { name: "Fiche Alphabet LSF", link: "/https://hbaai.vercel.app/" }
     ]
   },
   {
