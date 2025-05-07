@@ -1,26 +1,22 @@
 import React, { useState } from 'react';
 
 const resources = [
- {
-  theme: "assistant",
-  resources: [
-    { title: "Page d'accueil UniSign", url: "https://hbaai.vercel.app/" }
-  ],
-
-
-
-
+  {
+    theme: "L'alphabet",
+    resources: [
+      { title: "Page d'accueil UniSign", url: "https://hbaai.vercel.app/" }
+    ],
     pdf: [
-      { name: "Fiche Alphabet LSF", link: "https://hbaai.vercel.app/" }
+      { name: "Fiche Alphabet LSF", link: "https://hbaai.vercel.app/fiche-alphabet.pdf" }
     ]
   },
   {
     theme: "La famille",
     videos: [
-      { title: "Vocabulaire Famille", url: "https://hbaai.vercel.app/" }
+      { title: "Vocabulaire Famille", url: "https://hbaai.vercel.app/vocabulaire-famille.mp4" }
     ],
     pdf: [
-      { name: "Famille en langue des signes", link: "https://hbaai.vercel.app/" }
+      { name: "Famille en langue des signes", link: "https://hbaai.vercel.app/famille-lsf.pdf" }
     ]
   },
   {
@@ -29,7 +25,7 @@ const resources = [
       { title: "Exprimer ses émotions", url: "https://www.youtube.com/embed/rYutZNm9SXY" }
     ],
     pdf: []
-  },
+  }
 ];
 
 const Aide = () => {
@@ -45,7 +41,7 @@ const Aide = () => {
             <h2 className="text-2xl font-semibold text-emerald-800 mb-4">{section.theme}</h2>
 
             <div className="space-y-4">
-              {section.videos.map((vid, vIdx) => (
+              {section.videos && section.videos.map((vid, vIdx) => (
                 <div key={vIdx}>
                   <p className="font-medium text-gray-700 mb-2">🎥 {vid.title}</p>
                   <iframe
@@ -64,7 +60,6 @@ const Aide = () => {
                   <ul className="list-disc pl-5 mt-2 text-emerald-600 space-y-1">
                     {section.pdf.map((doc, pIdx) => (
                       <li key={pIdx}>
-                        {/* Modification ici : Ouvrir le PDF dans un nouvel onglet */}
                         <a
                           href={doc.link}
                           target="_blank"
@@ -84,9 +79,10 @@ const Aide = () => {
       </div>
 
       {/* Bouton pour ouvrir la modal avec le PDF */}
-      <button onClick={() => setShowPdf(true)}>
+      <button onClick={() => setShowPdf(true)} className="mt-8 bg-emerald-600 text-white py-2 px-6 rounded-md hover:bg-emerald-700 transition">
         Ouvrir le guide PDF
       </button>
+
       {showPdf && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-4 rounded shadow-lg max-w-3xl w-full relative">
@@ -127,3 +123,4 @@ const Aide = () => {
 };
 
 export default Aide;
+
