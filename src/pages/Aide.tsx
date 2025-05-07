@@ -4,7 +4,7 @@ const resources = [
   {
     theme: "L'alphabet",
     videos: [
-      { title: "Alphabet en LSF", url: "https://www.youtube.com/embed/watch?v=pQO0oCFLeiA" }
+      { title: "Alphabet en LSF", url: "https://hbaai.vercel.app/" }
     ],
     pdf: [
       { name: "Fiche Alphabet LSF", link: "/https://hbaai.vercel.app/" }
