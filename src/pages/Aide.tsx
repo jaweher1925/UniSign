@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 
 const resources = [
-  {
-    theme: "L'alphabet",
-     resources: [
-  { title: "Alphabet en LSF", url: "https://hbaai.vercel.app/" }
-],
+ {
+  theme: "assistant",
+  resources: [
+    { title: "Page d'accueil UniSign", url: "https://hbaai.vercel.app/" }
+  ],
+
+
 
 
     pdf: [
